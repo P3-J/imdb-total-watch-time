@@ -10,4 +10,4 @@ Simple webscraper using imdb csv file to get the total watch time
 
 3. **BS4** and **Requests**
 
-4. Give it sometime to process all the shows.
+4. Give it some time to process all the shows.
