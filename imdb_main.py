@@ -2,6 +2,8 @@ import csv
 from bs4 import BeautifulSoup
 import requests
 
+#fix
+
 show_data_list = []
 watch_time = 0
 
