@@ -1,7 +1,6 @@
 import csv
 from bs4 import BeautifulSoup
 import requests
-import time
 from lxml import etree
 
 def reader():
@@ -42,12 +41,13 @@ def series_runtime_scrape(url : str, runtime : int) -> int:
 
     response_list = dom.xpath('//*[@id="__next"]/main/div/section[1]/div/section/div/div[1]/section[2]/div[1]/a/h3/span[2]')
 
-    if len(response_list) > 0:
+    if len(response_list) > 0 and runtime != "":
         return int(response_list[0].text) * int(runtime)
     return 0
   
 def main():
     reader()
+    block = input("Program Done")
 
 if __name__ == "__main__":
     main()
